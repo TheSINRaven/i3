@@ -1,0 +1,6 @@
+URxvt*transparent: true
+URxvt*shading: 25
+URxvt*scrollBar: false
+URxvt*background: Black
+URxvt.foreground: #ffffff
+URxvt.font: xft:DejavuSansMono:size=12
