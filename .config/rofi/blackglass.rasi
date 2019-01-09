@@ -1,0 +1,139 @@
+/**
+ * User: The SIN Raven
+ * Copyright: The SIN Raven
+ */
+
+configuration {
+	display-drun:		"drun";
+	display-run:		"run";
+	display-window:		"window";
+	show-icons:		true;
+	sidebar-mode:		true;
+}
+
+* {
+	background-color:		transparent;
+	border-color:			#00000080;
+	text-color:			#FFFFFF;
+	font:				"xtf:DevavuSansMono:size:12";
+}
+
+window {
+	background-color:	#00000080;
+	width:			 20%;
+	children:		[mainbox];
+}
+
+mainbox {
+	spacing:		30px;
+	/*margin:		30%;*/
+	padding:		5px 0;
+}
+
+message {
+    border:       2px 0px 0px ;
+    border-color: #FFFFFF;
+    padding:      1px ;
+}
+
+textbox {
+        text-color: #FFFFFF;
+}
+
+button { padding: 5px 2px; }
+
+button selected {
+        background-color:		#1C1C1C80;
+        text-color:			#FFFFFF;
+}
+
+inputbar {
+	backgorund-color:		#00000080;
+        padding:			0 30px;
+        spacing:			5px;
+	children:			[prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+prompt {
+	text-color:			#FFFFFF;
+}
+
+textbox-prompt-colon {
+        expand: false;
+        str: ":";
+        margin: 0 1ch 0 0;
+        backaground-color: #1C1C1C80;
+        text-color: #FFFFFF;
+}
+
+entry {
+        text-color: #FFFFFF;
+}
+
+case-indicator {
+        text-color: #FFFFFF;
+}
+
+sidebar, message {
+        border: 1px 0;
+        border-color: #1C1C1C80;
+}
+
+listview {
+        dynamic:			false;
+        cycle:				true;
+}
+
+button, textbox {
+	text-color:			#FFFFFF;
+	padding:			5px;
+}
+
+button selected {
+	background-color:		#1C1C1C80;
+	text-color:			#FFFFFF;
+}
+
+listview {
+	scrollbar:		true;
+	margin:			0 10px 0 30px;
+}
+
+scrollbar {
+	background-color:		#1C1C1C80;
+	handle-color:			#6E6E6E;
+	handle-width:			10px;
+	border:				0 1px;
+	border-color:			#00000080;
+	margin:				0 0 0 20px;
+}
+
+element {
+	padding:		5px;
+	highlight:		bold underline;
+}
+
+element normal {
+	background-color:		@transparent;
+}
+
+element selected {
+	background-color:		#1C1C1C80;
+}
+
+element alternate {
+	/*background-color:		#1C1C1C80;*/
+}
+
+element normal normal, element selected normal, element alternate normal {
+	text-color:		#FFFFFF;
+}
+
+element normal urgent, element selected urgent, element alternate urgent {
+	text-color:		#FFFFFF;
+}
+
+element normal active, element selected active, element alternate active {
+	text-color:		#FFFFFF;
+}
+
